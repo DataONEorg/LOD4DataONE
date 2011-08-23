@@ -1,0 +1,88 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+<!-- OWL-DL Compliance statements -->
+<!-- DC -->
+<rdf:Description rdf:about="http://purl.org/dc/terms/date">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/abstract">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/coverage">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/rights">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/language">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/type">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/relation">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/hasPart">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/isPartOf">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/format">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+<!--
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+-->
+</rdf:Description>
+<!-- this will be on the data -->
+<rdf:Description rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/KNBTypes.rdf#filename">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/KNBTypes.rdf#filesize">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/KNBTypes.rdf#species">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+<!-- type for KNB -->
+<rdf:Description rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/KNBTypes.rdf#DatasetType">
+  <rdfs:label xml:lang="EN">Dataset Type</rdfs:label>
+  <rdfs:comment xml:lang="EN">Type used by KNB - may not need it because properties do not have range or domain restrictions</rdfs:comment>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/KNBTypes.rdf#datafile">
+  <rdfs:label xml:lang="EN">Datafile Type</rdfs:label>
+  <rdfs:comment xml:lang="EN">DCMI types do no identify a file</rdfs:comment>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+</rdf:RDF>

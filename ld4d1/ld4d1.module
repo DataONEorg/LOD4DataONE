@@ -1,0 +1,50 @@
+<?php
+
+include_once("ld4d1_functions.inc");
+
+
+/*************************************************************************************
+   LOD4DataONE : module to control menus and views
+   Author: Aida Gandara
+           agandara1@miners.utep.edu
+   Purpose:  Demonstrate queries into RDF data for LOD4DataONE internship
+****************************************************************************************/
+
+/** hooks for module ****/
+
+/***************************************************************************************
+  _menu() - defines an array containing the menus to be used to view LOD4DataONE 
+            views
+****************************************************************************************/
+function ld4d1_menu(){
+    $items = array();
+    $items['lod4d1'] = array(
+      'title' => 'LOD4DataONE Queries',
+      'description' => 'See queries that can be executed over this data.',
+      'page callback' => 'ld4d1_main_page',
+      'page arguments' => array(),
+      'access arguments' => array('access content'),
+      'type' => MENU_NORMAL_ITEM,
+      'weight' => 0,
+      'expanded' => TRUE,
+    );
+    $items['resetlod4d1'] = array(
+      'title' => 'Reset LOD4DataONE Datastore',
+      'description' => 'Rereads the triples.',
+      'page callback' => 'ld4d1_reset_page',
+      'page arguments' => array(),
+      'access arguments' => array('access content'),
+      'type' => MENU_NORMAL_ITEM,
+      'weight' => 0,
+      'expanded' => TRUE,
+    );
+    $items['lodqv/%'] = array(
+      'title' => 'QUERY RESULTS ==> ',
+      'description' => 'view the results of a specific query.',
+      'page callback' => 'ld4d1_queryview',
+      'page arguments' => array(1),
+      'type' => MENU_CALLBACK,
+      'access callback' => TRUE,
+    );
+    return $items;
+}

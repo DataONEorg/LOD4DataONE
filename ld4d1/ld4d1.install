@@ -1,0 +1,25 @@
+<?php
+// ld4d1 install  - don't have any commands, just need to reset menu
+
+
+function ld4d1_install(){
+
+
+
+}
+
+function ld4d1_uninstall(){
+
+
+
+}
+function ld4d1_enable(){
+
+
+
+}
+function ld4d1_disable(){
+
+
+
+}

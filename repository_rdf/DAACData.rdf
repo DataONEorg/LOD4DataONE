@@ -1,0 +1,334 @@
+<rdf:RDF 
+	xmlns:daacdt="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACTypes.rdf#" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:bibo="http://bibotools.googlecode.com/svn/bibo-ontology/tags/1.3/bibo.xml.owl#"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:datacite="http://purl.org/spar/datacite/"
+	xmlns:prism="http://prismstarndard.org/namespace/basic/2.0/"
+	xmlns:dbpedia="http://dbpedia.org/ontology/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+
+	<daacdt:FluxnetDataset rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#tumbarumba_data_010222_081231">
+		<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+		<rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+		<dcterms:publisher rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#ORNL-DAAC"/>
+		<daacdt:siteName>Tumbarumba</daacdt:siteName>
+		<daacdt:filename>tumbarumba_data_in_fluxnet_format_010222_081231.csv</daacdt:filename>
+		<daacdt:filesize>20465KB</daacdt:filesize>
+		<daacdt:mimetype>text/csv</daacdt:mimetype>
+		<daacdt:fileformat>fluxnet</daacdt:fileformat>
+		<daacdt:creationDate>2009-05</daacdt:creationDate>
+		<daacdt:fileOrigin>This file was created by Ray Leuning and Eva van Gorsel, CSIRO Marine and Atmosphereic Research</daacdt:fileOrigin>
+		<daacdt:dataPolicy>Kindly inform the appropriate Principal Investigators of how you are using flux and site data and of any publication plans. If the Principal Investigators feel that they should be acknowledged or offered participation as authors they will let you know. We assume that an agreement on such matters will be reached prior to publishing and/or use of the data for publication. If your work directly competes with the Principal Investigators analysis  he or she may ask that they have the opportunity to submit a manuscript before you submit the one that uses their data. In addition  when publishing a paper using flux data  please acknowledge the agency that supported the flux tower research.</daacdt:dataPolicy>
+		<geo:lat>35.656</geo:lat>
+		<geo:long>148.152</geo:long>
+		<daacdt:PI rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#RayLeunig"/>
+		<daacdt:PI rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#EvaVanGorsel"/>
+	</daacdt:FluxnetDataset>
+
+	<daacdt:SRDBDataset rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1">
+		<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+		<dcterms:publisher rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#ORNL-DAAC"/>
+		<daacdt:filename>srdb_data_v1.csv</daacdt:filename>
+		<daacdt:filesize>1127KB</daacdt:filesize>
+		<daacdt:mimetype>csv</daacdt:mimetype>
+		<daacdt:fileformat>srdb_data</daacdt:fileformat>
+		<dcterms:creator rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#BBond-Lamberty"/>
+		<dcterms:creator rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#AMThomson"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_1"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_14"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_102"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_130"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_611"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_612"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_685"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_686"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_687"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_697"/>
+	</daacdt:SRDBDataset>
+
+	<!-- all the records in the previous dataset -->
+	<!--   Only some of the fields were used     -->
+	<!-- named as resource#record_1  -->
+	<daacdt:SRDBDataRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_1">
+		<daacdt:entryDate>2008-09-26</daacdt:entryDate>
+		<dcterms:source rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_2534"/>
+		<dcterms:contributor rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.#BBond-Lamberty"/>
+		<daacdt:country rdf:resource="http://dbpedia.org/resource/Canada"/>
+		<daacdt:region rdf:resource="http://dbpedia.org/resource/Manitoba"/>
+		<daacdt:siteName>BOREAS NSA-D1998</daacdt:siteName>
+		<geo:lat>56.63</geo:lat>
+		<geo:long>-99.94</geo:long>
+		<dbpedia:species rdf:resource="http://dbpedia.org/resource/Picea_mariana"/>
+		<dbpedia:species rdf:resource="http://dbpedia.org/resource/Pinus_banksiana"/>
+		<dbpedia:species rdf:resource="http://dbpedia.org/resource/Populus_tremuloides"/>
+		<daacdt:soil_type>boralf</daacdt:soil_type>
+		<daacdt:soil_drainage>medium</daacdt:soil_drainage>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1"/>
+	</daacdt:SRDBDataRecord>
+	<daacdt:SRDBDataRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_14">
+		<daacdt:entryDate>2008-09-26</daacdt:entryDate>
+		<dcterms:source rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_2534"/>
+		<dcterms:contributor rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.#BBond-Lamberty"/>
+		<daacdt:country rdf:resource="http://dbpedia.org/resource/Canada"/>
+		<daacdt:region rdf:resource="http://dbpedia.org/resource/Manitoba"/>
+		<daacdt:siteName>BOREAS NSA-W1850 NOBS</daacdt:siteName>
+		<geo:lat>55.88</geo:lat>
+		<geo:long>-98.48</geo:long>
+		<dbpedia:species rdf:resource="http://dbpedia.org/resource/Picea_mariana"/>
+		<daacdt:soil_type>aqualf</daacdt:soil_type>
+		<daacdt:soil_drainage>wet</daacdt:soil_drainage>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1"/>
+	</daacdt:SRDBDataRecord>
+	<daacdt:SRDBDataRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_102">
+		<daacdt:entryDate>2008-10-07</daacdt:entryDate>
+		<dcterms:source rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_4181"/>
+		<dcterms:contributor rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.#BBond-Lamberty"/>
+		<daacdt:country rdf:resource="http://dbpedia.org/resource/Brazil"/>
+		<daacdt:siteName>Manaus</daacdt:siteName>
+		<geo:lat>-2.58</geo:lat>
+		<geo:long>-50.1</geo:long>
+		<daacdt:soil_type>organic</daacdt:soil_type>
+		<daacdt:soil_drainage>dry</daacdt:soil_drainage>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1"/>
+	</daacdt:SRDBDataRecord>
+	<daacdt:SRDBDataRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_130">
+		<daacdt:entryDate>2008-10-10</daacdt:entryDate>
+		<dcterms:source rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_1112"/>
+		<dcterms:contributor rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.#BBond-Lamberty"/>
+		<daacdt:country rdf:resource="http://dbpedia.org/resource/Canada"/>
+		<daacdt:region rdf:resource="http://dbpedia.org/resource/Saskatchewan"/>
+		<daacdt:siteName>BFG Planation-C</daacdt:siteName>
+		<geo:lat>53.92</geo:lat>
+		<geo:long>-104.69</geo:long>
+		<dbpedia:species rdf:resource="http://dbpedia.org/resource/Pinus_banksiana"/>
+		<daacdt:soil_type>Typic albaqualf</daacdt:soil_type>
+		<daacdt:soil_drainage>Dry</daacdt:soil_drainage>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1"/>
+	</daacdt:SRDBDataRecord>
+	<daacdt:SRDBDataRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_611">
+		<daacdt:entryDate>2009-01-19</daacdt:entryDate>
+		<dcterms:source rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_1954"/>
+		<dcterms:contributor rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.#BBond-Lamberty"/>
+		<daacdt:country rdf:resource="http://dbpedia.org/resource/Germany"/>
+		<daacdt:siteName>Solling</daacdt:siteName>
+		<geo:lat>51.77</geo:lat>
+		<geo:long>9.58</geo:long>
+		<dbpedia:species rdf:resource="http://dbpedia.org/resource/Fagus_sylvatica"/>
+		<daacdt:soil_type>Dystric cambisols</daacdt:soil_type>
+		<daacdt:soil_drainage>dry</daacdt:soil_drainage>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1"/>
+	</daacdt:SRDBDataRecord>
+	<daacdt:SRDBDataRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_612">
+		<daacdt:entryDate>2009-01-19</daacdt:entryDate>
+		<dcterms:source rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_1954"/>
+		<dcterms:contributor rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.#BBond-Lamberty"/>
+		<daacdt:country rdf:resource="http://dbpedia.org/resource/Germany"/>
+		<daacdt:siteName>Solling</daacdt:siteName>
+		<geo:lat>51.77</geo:lat>
+		<geo:long>9.57</geo:long>
+		<dbpedia:species rdf:resource="http://dbpedia.org/resource/Picea_abies"/>
+		<daacdt:soil_type>Dystric cambisols</daacdt:soil_type>
+		<daacdt:soil_drainage>dry</daacdt:soil_drainage>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1"/>
+	</daacdt:SRDBDataRecord>
+	<daacdt:SRDBDataRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_685">
+		<daacdt:entryDate>2009-01-24</daacdt:entryDate>
+		<dcterms:source rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_2541"/>
+		<dcterms:contributor rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.#BBond-Lamberty"/>
+		<daacdt:country rdf:resource="http://dbpedia.org/resource/USA"/>
+		<daacdt:region rdf:resource="http://dbpedia.org/resource/Michigan"/>
+		<daacdt:siteName>Burton-A</daacdt:siteName>
+		<geo:lat>46.85</geo:lat>
+		<geo:long>-88.88</geo:long>
+		<dbpedia:species rdf:resource="http://dbpedia.org/resource/Acer_saccharum"/>
+		<daacdt:soil_type>Sandy spodosols</daacdt:soil_type>
+		<daacdt:soil_drainage>dry</daacdt:soil_drainage>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1"/>
+	</daacdt:SRDBDataRecord>
+	<daacdt:SRDBDataRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_686">
+		<daacdt:entryDate>2009-01-24</daacdt:entryDate>
+		<dcterms:source rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_2541"/>
+		<dcterms:contributor rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.#BBond-Lamberty"/>
+		<daacdt:country rdf:resource="http://dbpedia.org/resource/USA"/>
+		<daacdt:region rdf:resource="http://dbpedia.org/resource/Michigan"/>
+		<daacdt:siteName>Burton-B</daacdt:siteName>
+		<geo:lat>45.55</geo:lat>
+		<geo:long>-84.85</geo:long>
+		<dbpedia:species rdf:resource="http://dbpedia.org/resource/Acer_saccharum"/>
+		<daacdt:soil_type>Sandy spodosols</daacdt:soil_type>
+		<daacdt:soil_drainage>dry</daacdt:soil_drainage>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1"/>
+	</daacdt:SRDBDataRecord>
+	<daacdt:SRDBDataRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_687">
+		<daacdt:entryDate>2009-01-24</daacdt:entryDate>
+		<dcterms:source rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_2541"/>
+		<dcterms:contributor rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.#BBond-Lamberty"/>
+		<daacdt:country rdf:resource="http://dbpedia.org/resource/USA"/>
+		<daacdt:region rdf:resource="http://dbpedia.org/resource/Michigan"/>
+		<daacdt:siteName>Burton-C</daacdt:siteName>
+		<geo:lat>44.38</geo:lat>
+		<geo:long>-85.83</geo:long>
+		<dbpedia:species rdf:resource="http://dbpedia.org/resource/Acer_saccharum"/>
+		<daacdt:soil_type>Sandy spodosols</daacdt:soil_type>
+		<daacdt:soil_drainage>dry</daacdt:soil_drainage>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1"/>
+	</daacdt:SRDBDataRecord>
+	<daacdt:SRDBDataRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1_record_697">
+		<daacdt:entryDate>2009-01-26</daacdt:entryDate>
+		<dcterms:source rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_937"/>
+		<dcterms:contributor rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.#BBond-Lamberty"/>
+		<daacdt:country rdf:resource="http://dbpedia.org/resource/Brazil"/>
+		<daacdt:region rdf:resource="http://dbpedia.org/resource/Rondondia"/>
+		<daacdt:siteName>Fazenda Nova Vida</daacdt:siteName>
+		<geo:lat>-9</geo:lat>
+		<geo:long>-63</geo:long>
+		<dbpedia:species rdf:resource="http://dbpedia.org/resource/Brachiara_brizantha"/>
+		<daacdt:soil_type>Ultisol</daacdt:soil_type>
+		<daacdt:soil_drainage>dry</daacdt:soil_drainage>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_data_v1"/>
+	</daacdt:SRDBDataRecord>
+
+	<!-- this was created as a summary of what the dataset is  -->
+	<daacdt:SRDBDataset rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1">
+		<daacdt:filename>srdb_studies_v1.csv</daacdt:filename>
+		<daacdt:filesize>1424KB</daacdt:filesize>
+		<daacdt:mimetype>csv</daacdt:mimetype>
+		<daacdt:fileformat>srdb_study</daacdt:fileformat>
+		<dcterms:creator rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#BBond-Lamberty"/>
+		<dcterms:creator rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#AMThomson"/>
+		<rdfs:seeAlso rdf:resource="http://code.google.com/p/srdb"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_2534"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_4181"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_1112"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_1954"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_2541"/>
+		<dcterms:hasPart rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_937"/>
+	</daacdt:SRDBDataset>
+
+	<!-- all the records in the previous dataset -->
+	<!--   Only some of the fields were used     -->
+	<daacdt:SRDBStudyRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_2534">
+		<daacdt:studyNumber>2534</daacdt:studyNumber>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#??"/>
+		<dcterms:title></dcterms:title>
+		<dcterms:publisher></dcterms:publisher>
+		<bibo:volume></bibo:volume>
+		<bibo:issue></bibo:issue>
+		<bibo:pageStart></bibo:pageStart>
+		<bibo:pageEnd></bibo:pageEnd>
+		<daacdt:pubYear></daacdt:pubYear>
+                <bibo:note></bibo:note>
+		<bibo:abstract></bibo:abstract>
+		<dc:language></dc:language>
+		<daacdt:searchDate></daacdt:searchDate>
+		<daacdt:searchTerm></daacdt:searchTerm>
+		<datacite:hasRelatedIdentifier><prism:doi></prism:doi></datacite:hasRelatedIdentifier>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1"/>
+	</daacdt:SRDBStudyRecord>
+	<daacdt:SRDBStudyRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_4181">
+		<daacdt:studyNumber>4181</daacdt:studyNumber>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#??"/>
+		<dcterms:title></dcterms:title>
+		<dcterms:publisher></dcterms:publisher>
+		<bibo:volume></bibo:volume>
+		<bibo:issue></bibo:issue>
+		<bibo:pageStart></bibo:pageStart>
+		<bibo:pageEnd></bibo:pageEnd>
+		<daacdt:pubYear></daacdt:pubYear>
+                <bibo:note></bibo:note>
+		<bibo:abstract></bibo:abstract>
+		<dc:language></dc:language>
+		<daacdt:searchDate></daacdt:searchDate>
+		<daacdt:searchTerm></daacdt:searchTerm>
+		<datacite:hasRelatedIdentifier><prism:doi></prism:doi></datacite:hasRelatedIdentifier>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1"/>
+	</daacdt:SRDBStudyRecord>
+	<daacdt:SRDBStudyRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_1112">
+		<daacdt:studyNumber>1112</daacdt:studyNumber>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#??"/>
+		<dcterms:title></dcterms:title>
+		<dcterms:publisher></dcterms:publisher>
+		<bibo:volume></bibo:volume>
+		<bibo:issue></bibo:issue>
+		<bibo:pageStart></bibo:pageStart>
+		<bibo:pageEnd></bibo:pageEnd>
+		<daacdt:pubYear></daacdt:pubYear>
+                <bibo:note></bibo:note>
+		<bibo:abstract></bibo:abstract>
+		<dc:language></dc:language>
+		<daacdt:searchDate></daacdt:searchDate>
+		<daacdt:searchTerm></daacdt:searchTerm>
+		<datacite:hasRelatedIdentifier><prism:doi></prism:doi></datacite:hasRelatedIdentifier>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1"/>
+	</daacdt:SRDBStudyRecord>
+	<daacdt:SRDBStudyRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_1954">
+		<daacdt:studyNumber>1954</daacdt:studyNumber>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#??"/>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#WBorken"/>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#YJXu"/>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#EADavidson"/>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#ABeese"/>
+		<dcterms:title></dcterms:title>
+		<dcterms:publisher></dcterms:publisher>
+		<bibo:volume></bibo:volume>
+		<bibo:issue></bibo:issue>
+		<bibo:pageStart></bibo:pageStart>
+		<bibo:pageEnd></bibo:pageEnd>
+		<daacdt:pubYear></daacdt:pubYear>
+                <bibo:note></bibo:note>
+		<bibo:abstract></bibo:abstract>
+		<dc:language></dc:language>
+		<daacdt:searchDate></daacdt:searchDate>
+		<daacdt:searchTerm></daacdt:searchTerm>
+		<datacite:hasRelatedIdentifier><prism:doi></prism:doi></datacite:hasRelatedIdentifier>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1"/>
+	</daacdt:SRDBStudyRecord>
+	<daacdt:SRDBStudyRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_2541">
+		<daacdt:studyNumber>2541</daacdt:studyNumber>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#AJBurton"/>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#KSPregitzer"/>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#JNCrawford"/>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#GPZogg"/>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#DRZak"/>
+		<dcterms:title>Simulated chronic NO3- deposition reduces soil respiration in northern hardwood forests</dcterms:title>
+		<dcterms:publisher>GLOBAL CHANGE BIOLOGY</dcterms:publisher>
+		<bibo:volume>10</bibo:volume>
+		<bibo:issue>7</bibo:issue>
+		<bibo:pageStart>1080</bibo:pageStart>
+		<bibo:pageEnd>1091</bibo:pageEnd>
+		<daacdt:pubYear>2004</daacdt:pubYear>
+                <bibo:note></bibo:note>
+		<bibo:abstract>Chronic N additions to forest ecosystems can enhance soil N availability, potentially leading to reduced C allocation to root systems. This in turn could decrease soil CO2 efflux. We measured soil respiration during the first, fifth, sixth and eighth years of simulated atmospheric NO3- deposition (3 g N m(-2) yr(-1)) to four sugar maple-dominated northern hardwood forests in Michigan to assess these possibilities. During the first year, soil respiration rates were slightly, but not significantly, higher in the NO3--amended plots. In all subsequent measurement years, soil respiration rates from NO3--amended soils were significantly depressed. Soil temperature and soil matric potential were measured concurrently with soil respiration and used to develop regression relationships for predicting soil respiration rates. Estimates of growing season and annual soil CO2 efflux made using these relationships indicate that these C fluxes were depressed by 15% in the eighth year of chronic NO3- additions. The decrease in soil respiration was not due to reduced C allocation to roots, as root respiration rates, root biomass, and root turnover were not significantly affected by N additions. Aboveground litter also was unchanged by the 8 years of treatment. Of the remaining potential causes for the decline in soil CO2 efflux, reduced microbial respiration appears to be the most likely possibility. Documented reductions in microbial biomass and the activities of extracellular enzymes used for litter degradation on the NO3--amended plots are consistent with this explanation.</bibo:abstract>
+		<dc:language>en</dc:language>
+		<daacdt:searchDate>2008-09-26</daacdt:searchDate>
+		<daacdt:searchTerm>Topic=&#40;&quot;soil respiration&quot;&#41;</daacdt:searchTerm>
+		<datacite:hasRelatedIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.1111/j.1365-2486.2004.00737.x</datacite:hasRelatedIdentifier>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1"/>
+	</daacdt:SRDBStudyRecord>
+	<daacdt:SRDBStudyRecord rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1_study_937">
+		<daacdt:studyNumber>937</daacdt:studyNumber>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#BJFeigl"/>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#PASteudler"/>
+		<daacdt:author rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf.rdf#CCCerri"/>
+		<dcterms:title>Effects of pasture introduction on soil CO2 emissions during the dry season in the state of Rondonia, Brazil</dcterms:title>
+		<dcterms:publisher>BIOGEOCHEMISTRY</dcterms:publisher>
+		<bibo:volume>31</bibo:volume>
+		<bibo:issue>1</bibo:issue>
+		<bibo:pageStart>1</bibo:pageStart>
+		<bibo:pageEnd>14</bibo:pageEnd>
+		<daacdt:pubYear>1995</daacdt:pubYear>
+                <bibo:note></bibo:note>
+		<bibo:abstract>Soil CO2 evolution rates, soil temperatures and moisture were measured during the dry season in two forest-to-pasture chronosequences in Rondonia, Brazil. The study included pastures ranging from 3 to 80 years-old. Mean dry-season CO2 evolution from the forest in chronosequence I, 88.8 mg CO2-C m(-2) h(-1) was lower than from the pastures which ranged from 111 to 158 mg CO2-C m(-2)h(-1). We found that temperature was not a good predictor of CO2 emissions from pasture but that there was a significant relationship (r = 0.72, p &lt; 0.05) between soil moisture and pasture emissions. The delta(13)C of the soil CO2 emissions also was measured on chronosequence I; delta(13)C of the CO2 emitted from the C-3 forest was -29.43 parts per thousand. Pasture (CO2)-C-13 delta values increased from -17.91 parts per thousand in the 3 year-old pasture to -12.86 parts per thousand in the 80 year-old, reflecting the increasing C-4 inputs with pasture age. Even in the youngest(3 year-old) pasture, 70 percent of the CO2 evolved originated from C-4 pasture-derived carbon.</bibo:abstract>
+		<dc:language>en</dc:language>
+		<daacdt:searchDate>2008-09-26</daacdt:searchDate>
+		<daacdt:searchTerm>Topic=&#40;&quot;soil respiration&quot;&#41;</daacdt:searchTerm>
+		<datacite:hasRelatedIdentifier><prism:doi></prism:doi></datacite:hasRelatedIdentifier>
+		<dcterms:isPartOf rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACData.rdf#srdb_studies_v1"/>
+	</daacdt:SRDBStudyRecord>
+</rdf:RDF>

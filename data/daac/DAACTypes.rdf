@@ -1,0 +1,78 @@
+<rdf:RDF
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dcmi="http://purl.org/dc/dcmitype/"
+    xmlns:bibo="http://bibotools.googlecode.com/svn/bibo-ontology/tags/1.3/bibo.xml.owl#"
+    xmlns:wgs84="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:dbpedia="http://dbpedia.org/ontology/"
+    xmlns:daacdt="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACTypes.rdf#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+
+<!-- DC -->
+<!-- removed OWL-DL stuff for DCterms because can use simple RDFS -->
+<!-- this will be on the data -->
+<rdf:Property rdf:ID="daacdt:fileformat">
+  <rdfs:subPropertyOf rdf:resource="dcterms:format"/>
+</rdf:Property>
+<rdf:Property rdf:ID="daacdt:filename"/>
+<rdf:Property rdf:ID="daacdt:filesize"/>
+<rdf:Property rdf:ID="daacdt:mimetype"/>
+<rdf:Property rdf:ID="daacdt:siteName"/>
+<rdf:Property rdf:about="daacdt:creationDate">
+  <rdfs:subPropertyOf rdf:resource="dcterms:date"/>
+</rdf:Property>
+<rdf:Property rdf:about="daacdt:entryDate">
+  <rdfs:subPropertyOf rdf:resource="dcterms:date"/>
+</rdf:Property>
+<rdf:Property rdf:about="daacdt:searchDate">
+  <rdfs:subPropertyOf rdf:resource="dcterms:date"/>
+</rdf:Property>
+<rdf:Property rdf:about="daacdt:pubYear">
+  <rdfs:subPropertyOf rdf:resource="dcterms:date"/>
+</rdf:Property>
+<rdf:Property rdf:about="daacdt:fileOrigin"/>
+<rdf:Property rdf:about="daacdt:dataPolicy"/>
+<rdf:Property rdf:about="daacdt:PI">
+  <rdfs:subPropertyOf rdf:resource="dcterms:contributor"/>
+</rdf:Property>
+<rdf:Property rdf:about="daacdt:country"/>
+<rdf:Property rdf:about="daacdt:region">
+  <rdfs:subPropertyOf rdf:resource="dcterms:coverage"/>
+</rdf:Property>
+<rdf:Property rdf:about="daacdt:author">
+  <rdfs:subPropertyOf rdf:resource="dcterms:creator"/>
+</rdf:Property>
+<rdf:Property rdf:ID="daacdt:studyNumber">
+  <rdfs:subPropertyOf rdf:resource="dcterms:creator"/>
+</rdf:Property>
+<rdf:Property rdf:ID="daacdt:soil_type"/>
+<rdf:Property rdf:ID="daacdt:soil_drainage"/>
+
+<!-- types for  DAAC -->
+<rdfs:Class rdf:ID="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACTypes.rdf#SRDBDataset">
+  <rdfs:label xml:lang="EN">SRDB</rdfs:label>
+  <rdfs:comment xml:lang="EN">Soil Respiration Database</rdfs:comment>
+</rdfs:Class>
+<rdfs:Class rdf:ID="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACTypes.rdf#SRDBDataRecord">
+  <rdfs:label xml:lang="EN">SRDBRecord</rdfs:label>
+  <rdfs:subClassOf rdf:resource="wgs84:SpatialThing"/>
+  <rdfs:comment xml:lang="EN">Soil Respiration Database Record</rdfs:comment>
+</rdfs:Class>
+<rdfs:Class rdf:ID="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACTypes.rdf#SRDBStudyRecord">
+  <rdfs:label xml:lang="EN">SRDBRecord</rdfs:label>
+  <rdfs:subClassOf rdf:resource="wgs84:SpatialThing"/>
+  <rdfs:comment xml:lang="EN">Soil Respiration Database Record</rdfs:comment>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACTypes.rdf#FluxnetDataset">
+  <rdfs:label xml:lang="EN">FluxnetDataset</rdfs:label>
+  <rdfs:comment xml:lang="EN">A Fluxnet Dataset, data from a specific location</rdfs:comment>
+</rdfs:Class>
+<rdfs:Class rdf:ID="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/DAACTypes.rdf#FluxnetDataRecord">
+  <rdfs:label xml:lang="EN">FluxnetDataRecord</rdfs:label>
+  <rdfs:comment xml:lang="EN">A Fluxnet Data record - there are many of these</rdfs:comment>
+</rdfs:Class>
+
+</rdf:RDF>

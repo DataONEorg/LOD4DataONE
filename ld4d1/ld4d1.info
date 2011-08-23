@@ -1,0 +1,6 @@
+; $Id$
+name = ld4d1
+description = module supporting the LOD4DataONE demonstration; requires ARC2 installed in libs/semsol-arc2=495d10b; does not require RDF module
+core  = 6.x
+version = 0.1
+

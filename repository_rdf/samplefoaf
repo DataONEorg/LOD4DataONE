@@ -1,0 +1,173 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+<!--- Sample foaf instances for LOD4DataONE summer internship -->
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#JohnLGittleman">
+  <foaf:name>John L Gittleman</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>John</foaf:givenname>
+  <foaf:family_name>Gittleman</foaf:family_name>
+  <foaf:nick>John</foaf:nick>
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#SamanthaAPrice">
+  <foaf:name>Samantha A Price</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>Samantha</foaf:givenname>
+  <foaf:family_name>Price</foaf:family_name>
+  <foaf:nick>Sam</foaf:nick>
+</foaf:Person>
+
+<!-- foaf persons - allow to choose these for the authors known -->
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#MarkVellend">
+  <foaf:name>Mark Vellend</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>Mark</foaf:givenname>
+  <foaf:family_name>Vellend</foaf:family_name>
+  <foaf:nick>Mark</foaf:nick>
+  <foaf:workplaceHomepage rdf:resource="http://www.usherbrooke.ca/biologie/personnel/professeurs/ecologie-terrestre/mark-vellend/"/>
+  <foaf:workInfoHomepage rdf:resource="http://www.usherbrooke.ca/biologie/personnel/professeurs/ecologie-terrestre/mark-vellend/"/>
+  <foaf:homepage rdf:resource="http://pages.usherbrooke.ca/mvellend/"/>
+  <foaf:schoolHomepage rdf:resource="http://www.usherbrooke.ca/"/>
+  <foaf:phone rdf:resource="tel:+18198218000"/>
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#StephenCarpenter">
+  <foaf:name>Stephen Carpenter</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>Stephen</foaf:givenname>
+  <foaf:family_name>Carpenter</foaf:family_name>
+  <foaf:nick>Stephen</foaf:nick>
+</foaf:Person>
+
+<!--- ORNL DAAC users -->
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#RayLeuning">
+  <foaf:name>Ray Leuning</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>Ray</foaf:givenname>
+  <foaf:family_name>Leuning</foaf:family_name>
+  <foaf:nick>Ray</foaf:nick>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#EvaVanGorsel"/>
+  <foaf:mbox>ray.leuning@csiro.au</foaf:mbox>
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#EvaVanGorsel">
+  <foaf:name>Eva van Gorsel</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>Eva</foaf:givenname>
+  <foaf:family_name>van Gorsel</foaf:family_name>
+  <foaf:nick>Eva</foaf:nick>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#RayLeuning"/>
+  <foaf:mbox>eva.vangorsel@csiro.au</foaf:mbox>
+</foaf:Person>
+
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#BBond-Lamberty">
+  <foaf:name>B Bond-Lamberty</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>B</foaf:givenname>
+  <foaf:family_name>Bond-Lamberty</foaf:family_name>
+  <foaf:nick>B</foaf:nick>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#AMThomson"/>
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#AMThomson">
+  <foaf:name>AM Thomson</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>AM</foaf:givenname>
+  <foaf:family_name>Thomson</foaf:family_name>
+  <foaf:nick>AM</foaf:nick>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#BBond-Lamberty"/>
+</foaf:Person>
+
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#MEMaldague">
+  <foaf:name>ME Maldague</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>ME</foaf:givenname>
+  <foaf:family_name>Maldague</foaf:family_name>
+  <foaf:nick>ME</foaf:nick>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#FHilger"/>
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#HFilger">
+  <foaf:name>H Filger</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>H</foaf:givenname>
+  <foaf:family_name>Filger</foaf:family_name>
+  <foaf:nick>H</foaf:nick>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#MEMaldague"/>
+</foaf:Person>
+
+
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#AJBurton">
+  <foaf:name>AJ Burton</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>AJ</foaf:givenname>
+  <foaf:family_name>Burton</foaf:family_name>
+  <foaf:nick>AJ</foaf:nick>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#KSPregitzer"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#KJNCrawford"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#GPZogg"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#DRZak"/>
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#KSPregitzer">
+  <foaf:name>KS Pregitzer</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>KS</foaf:givenname>
+  <foaf:family_name>Pregitzer</foaf:family_name>
+  <foaf:nick>KS</foaf:nick>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#AJBurton"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#KJNCrawford"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#GPZogg"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#DRZak"/>
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#JNCrawford">
+  <foaf:name>JN Crawford</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>JN</foaf:givenname>
+  <foaf:family_name>Crawford</foaf:family_name>
+  <foaf:nick>JN</foaf:nick>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#AJBurton"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#KSPregitzer"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#GPZogg"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#DRZak"/>
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#GPZogg">
+  <foaf:name>GP Zogg</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>GP</foaf:givenname>
+  <foaf:family_name>Zogg</foaf:family_name>
+  <foaf:nick>GP</foaf:nick>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#AJBurton"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#KSPregitzer"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#JNCrawford"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#DRZak"/>
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#DRZak">
+  <foaf:name>DR Zak</foaf:name>
+  <foaf:title>Dr</foaf:title>
+  <foaf:givenname>DR</foaf:givenname>
+  <foaf:family_name>Zak</foaf:family_name>
+  <foaf:nick>DR</foaf:nick>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#AJBurton"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#KSPregitzer"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#JNCrawford"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciproject/sdata/samplefoaf#GPZogg"/>
+</foaf:Person>
+
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#BJFeigl">
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#PASteudler"/>
+  <foaf:knows rdf:resource="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#CCCerri"/>
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#PASteudler">
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#CCCerri">
+</foaf:Person>
+
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#WBorken">
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#YJXu">
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#ABeese">
+</foaf:Person>
+<foaf:Person rdf:about="http://rio.cs.utep.edu/ciserver/ciprojects/sdata/samplefoaf#EADavidson">
+</foaf:Person>
+
+</rdf:RDF>

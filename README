@@ -1,3 +1,46 @@
 This is the repository for artifacts (source code, documentation, RDF and other data output, etc) from the 2011 DataONE Summer Internship project "Integrating loosely structured data into the Linked Open Data cloud".
 
 The intern is Aída Gándara (University of Texas at El Paso) and the mentor is Hilmar Lapp (NESCent).
+
+Information on this research effort can be found at http://notebooks.dataone.org/lod4dataone
+
+The current RDF data is being stored at http://rio.cs.utep.edu/ciserver/ciprojects/sdata/...  and they can be viewed through access the CI-Server LOD4DataONE project at http://rio.cs.utep.edu/ciserver/ciserver/viewresource/LOD4DataONE.  Multiple servers were used due to PHP version issues that were encountered when the ARC2 library was added to the demonstration.
+
+Sample queries resulting from this work, as well as the use cases that directed this work, can be found at http://manaus.cs.utep.edu/lod4d1.
+
+IN THIS GITHUB REPOSITORY, YOU WILL FIND:
+
+ld4d1 : this directory has module code that can be loaded onto a Drupal server.  A local version of ARC2, https://github.com/semsol/arc2/wiki, is expected in the libs/semsol-arc2-495d10b directory.  Modify the include lines if ARC2 is installed elsewhere. There are 3 files in the module:
+	ld4d1_functions.inc
+	ld4d1.info
+	ld4d1.install
+	ld4d1.module
+	
+
+	The module can be installed on any Drupal 6 install over PHP 5.2.  Place the ld4d1 in the modules directory and enable it through the admin pages.
+The database settings will need to be modified in the ld4d1_reset_page() and ld4d1_queryview() functions within the ld4d1_functions.inc file.  Set these to the appropriate settings for accessing the ARC2 database. 
+
+	The ld4d1_reset_page() function will also need to be modified to load the RDF used by the query view.  Currently, the files loaded are located on a UTEP CI-Server called rio, this would be modified if the files are placed elsewhere.
+
+java  : this directory has the java files are used to extract data from the repositories and create RDF that is subsequently uploaded to a server.  This code was built in Eclipse.  Open Eclipse, create a Java project and load the 7 files.  mainC has the main() function:
+     D1DryadOAIPMHMapper.java
+     D1KNBMetacatMapper.java
+     D1ORNLDAACMapper.java
+     DryadDataSet.java
+     KNBDataSet.java
+     mainC.java
+     build.xml
+
+	The build.xml file is an Ant script with instructions on creating the javadoc.
+
+	To upload to a CI-Server, as occurs in the main() function, you will need an account on a CI-Server (Drupal) implementation and the ciclient.jar found at http://rio.cs.utep.edu/ciserver/CI-Downloads.  Go to http://rio.cs.utep.edu/ciserver/AboutUs if you need more information on using CI-Server.  Otherwise, just replace the code in the mainC.java file to put the content where you need it.
+
+repository_rdf : this directory holds the RDF files that were uploaded to the server and are loaded into the ARC2 repository for the demonstration.  Their URIs are specific to the path on the CI-Server where they were uploaded and accessed from.  You will need to modify the path as needed if they are published elsewhere.  Since most of the queries do not specifically search the repository properties, e.g., they search more popular properties like Dublin-Core or DBpedia, most queries should not be affected by a move.  Some will be though.
+
+doc : this directory has javadoc descriptions of the java code.  Open index.html to see it.
+
+data : the main() function refers to several static files that are located in a data directory.  This directory has those files, they were created manually to support the demonstration.  These are uploaded to a server within the main() function which looks in c:/data for the files, modify the reference if the files will be placed elsewhere.
+
+updates : this directory has two powerpoint slideshows.  These were created in an effort share the progress of this research effort.  I am not sure how useful they are as they were created rather quickly and there was never any feedback.  The two files are:
+	LOD4DataONEWeek3EX.ppsx
+	LOD4DataONEWeek5.pptx
