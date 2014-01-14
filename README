@@ -2,7 +2,7 @@ This is the repository for artifacts (source code, documentation, RDF and other 
 
 The intern is Aída Gándara (University of Texas at El Paso) and the mentor is Hilmar Lapp (NESCent).
 
-Information on this research effort can be found at http://notebooks.dataone.org/lod4dataone
+Information on this research effort can be found at http://notebooks.dataone.org/linked-data/
 
 The current RDF data is being stored at http://rio.cs.utep.edu/ciserver/ciprojects/sdata/...  and they can be viewed through access the CI-Server LOD4DataONE project at http://rio.cs.utep.edu/ciserver/ciserver/viewresource/LOD4DataONE.  Multiple servers were used due to PHP version issues that were encountered when the ARC2 library was added to the demonstration.
 
